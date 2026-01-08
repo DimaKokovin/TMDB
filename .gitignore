@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Игнорируем файлы .env.txt
+
+.env
+#.env.txt.local
+#.env.txt.development.local
+.env.test.local
+#.env.txt.production.local
