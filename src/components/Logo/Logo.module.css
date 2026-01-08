@@ -1,0 +1,12 @@
+/* Logo.module.css */
+.logo {
+    width: 120px;
+    height: auto;
+    color: #ffff; /* основной цвет логотипа */
+    transition: color 0.3s ease;
+    margin-top: 25px;
+}
+
+.logo:hover {
+    color: #c6b9df; /* цвет при наведении */
+}

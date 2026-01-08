@@ -1,0 +1,38 @@
+.buttonContainer{
+    width: 100%;
+    /*height: 100px;*/
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+.customLink {
+    padding: 10px 20px;          /* внутренние отступы: сверху/снизу 10px, слева/справа 20px */
+    border: 1px solid #a37b7b;     /* тонкая черная рамка */
+    background-color: white;     /* белый фон */
+    color: #4a3939;                /* черный текст */
+    border-radius: 15px;          /* скругление углов */
+    font-size: 16px;             /* размер текста */
+    cursor: pointer;             /* курсор при наведении */
+    transition: all 0.2s ease;   /* плавная анимация при наведении */
+    text-decoration: none;
+}
+
+.customLink:hover {
+    background-color: #7a60dd;     /* фон становится черным */
+    color: white;                /* текст белый */
+    border-color: #4119cf;         /* рамка остается */
+    transform: scale(1.05);      /* небольшой эффект увеличения */
+}
+
+.customLink:active {
+    transform: scale(0.98);      /* эффект нажатия */
+}
+
+.activeCustomLink{
+    color: white;
+    background-color: #370fcf;
+}

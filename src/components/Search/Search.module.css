@@ -1,0 +1,84 @@
+.searchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formSection {
+    display: flex;
+    gap:10px
+}
+
+.inputSection {
+    display: flex;
+    gap: 10px;
+    /*align-items: center;*/
+    position: absolute;
+    /*top:350px;*/
+    /*left:120px;*/
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.title{
+    margin-left:10px;
+}
+
+.titleSearch{
+    margin-left: 15px;
+}
+
+.searchAndInputContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px
+}
+
+.customInput {
+    padding: 10px 15px;
+    border-radius: 20px;       /* скругление */
+    border: 1px solid #ccc;    /* светлый бордер */
+    outline: none;
+    background-color: #fff;    /* белый фон */
+    color: #000;               /* черный текст */
+    font-size: 16px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.customInput::placeholder {
+    color: #999;               /* серая подсказка */
+}
+
+.customInput:focus {
+    border-color: #1976d2;     /* синий бордер при фокусе */
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5);
+}
+
+.customButton {
+    padding: 10px 20px;
+    border-radius: 20px;       /* скругление */
+    border: none;
+    background-color: #1976d2; /* синий цвет */
+    color: #fff;               /* белый текст */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.customButton:hover {
+    background-color: #1565c0; /* чуть темнее на hover */
+    transform: scale(1.05);
+}
+
+.customButton:active {
+    transform: scale(0.98);
+}
+.customButton:disabled {
+    background-color: #b0bec5; /* Светло-серый фон */
+    color: #90a4ae;             /* Серый текст */
+    cursor: not-allowed;        /* Курсор "не доступно" */
+    opacity: 0.6;                /* Немного прозрачности */
+    transform: none;             /* Отключаем трансформацию нажатия */
+}

@@ -1,0 +1,9 @@
+.layoutContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* весь экран минимум, чтобы футер прижимался */
+}
+
+.mainContent {
+    flex: 1; /* занимает всё доступное пространство между хедером и футером */
+}

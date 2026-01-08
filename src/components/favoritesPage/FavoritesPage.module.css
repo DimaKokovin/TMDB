@@ -1,0 +1,53 @@
+.cardsContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* чтобы карточки переносились на следующую строку */
+    justify-content: flex-start;
+}
+
+
+
+.cardContainer {
+    width: 200px;
+    /*height: 300px;*/
+    /*width: 100%;*/
+    text-align: center;
+    position: relative;
+
+}
+
+.cardContainer img {
+    width: 200px;  /* Установить фиксированную ширину */
+    height: 300px; /* Установить фиксированную высоту */
+    object-fit: cover; /* Изображение будет обрезано, чтобы заполнить область */
+    border-radius: 15px;
+}
+
+.voteAverage{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    /*text-align: center;*/
+    border-radius: 50%;
+    position: absolute;
+    top: 235px;
+    left: 135px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+
+
+.voteAverageRed {
+    background-color: red;
+}
+
+.voteAverageYellow {
+    background-color: yellow;
+}
+
+.voteAverageGreen {
+    background-color: green;
+}
