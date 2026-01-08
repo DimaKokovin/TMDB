@@ -9,11 +9,7 @@ import type {FavoriteFilm} from "../../features/favorites/model/types.ts";
 export const FavoritesPage = () => {
 
    const dispatch = useAppDispatch()
-  // const favorites = useAppSelector(selectFavorites)
-   //const isFavorite = (id: number) => favorites.some(f => f.id === id);
 
-
-    // const selectFavorites = (state: RootState) => state.favorites.items;
     const favorites = useAppSelector(selectFavorites);
     const isFavorite = (id: number) => favorites.some(f => f.id === id);
 

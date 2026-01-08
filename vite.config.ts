@@ -1,24 +1,4 @@
 
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-//
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-// })
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-//
-// // https://vitejs.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-//   css: {
-//     modules: {
-//       // Местоположение CSS классов в формате camelCase
-//       localsConvention: 'camelCaseOnly',  // Можно использовать 'dashes' для дефисного стиля
-//     },
-//   },
-// })
 
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';

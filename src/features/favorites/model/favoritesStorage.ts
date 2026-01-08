@@ -17,12 +17,6 @@ export const saveFavorites = (favorites: FavoriteFilm[]) => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
 };
 
-
-
-
-
-
-
 export const loadTheme = (): ThemeMode => {
     try {
         const data = localStorage.getItem("theme");

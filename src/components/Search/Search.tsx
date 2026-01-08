@@ -99,27 +99,7 @@ export const Search = () => {
 
     return (
         <div className={s.searchContainer}>
-            {/*{data?.results?.map(film => (*/}
-            {/*    <div key={film.id}>*/}
 
-            {/*        <img*/}
-            {/*            src={`https://image.tmdb.org/t/p/w200${film.poster_path}`}*/}
-            {/*            alt={film.title}*/}
-            {/*        />*/}
-            {/*        <h3>{film.title}</h3>*/}
-
-            {/*    </div>*/}
-            {/*))}*/}
-
-            {/*{data?.results?.map(film => (*/}
-            {/*    <div key={film.id}>*/}
-
-            {/*        <Card data={data} flagForMain={false} flagForButtonViewMore={false} titleSection={"Results of searched"} />*/}
-
-            {/*    </div>*/}
-            {/*))}*/}
-
-            {/*{data?.results.length === 0 ? <span>{`No matches found for ${searchTerm}`}</span> : */}
 
                 {isLoading || isFetching ? (<div>Loading...</div>) : data?.results && data?.results.length >= 1 ?
 
