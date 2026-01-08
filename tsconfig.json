@@ -1,7 +1,23 @@
+//{
+//  "files": [],
+//  "references": [
+//    { "path": "./tsconfig.app.json" },
+//    { "path": "./tsconfig.node.json" },
+//
+//  ]
+//}
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "types": ["vite/client"],  // Добавление типов Vite
+    "moduleResolution": "node",  // Рекомендуется для корректного разрешения модулей
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "jsx": "react",
+    "module": "esnext"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],  // Включаем все файлы с расширением .ts и .d.ts
+  "exclude": ["node_modules"]
 }
