@@ -59,6 +59,7 @@ export const MoreForMoviePages = () => {
     return (
         <div className={s.MoreForMoviePages}>
 
+
             <div key={movie?.id} className={s.boxPages}>
                 <div>
                     <div className={s.cardContainer}>
@@ -93,6 +94,12 @@ export const MoreForMoviePages = () => {
                            return <span>{film_genre.name}</span>
                        })}
                    </div>
+                   <div className={s.buttonsBack}>
+                       <button onClick={() => navigate(-1)}>
+                           ← Back
+                       </button>
+
+                   </div>
 
                </div>
             </div>
@@ -126,12 +133,7 @@ export const MoreForMoviePages = () => {
                 {!isLoadingSimilar && similar && <Card data={similar} titleSection={'Similar movies'} flagForMain={true} flagForButtonViewMore={false}/>}
                 {/*flagForMain={true} это ошибка в данном случае, но параметр нужен  чтобы отрисовать не более 6 картинок*/}
             </section>
-            <div className={s.buttonsBack}>
-                <button onClick={() => navigate(-1)}>
-                    ← Back
-                </button>
 
-            </div>
         </div>
 
     )
