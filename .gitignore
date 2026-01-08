@@ -26,7 +26,6 @@ dist-ssr
 # Игнорируем файлы .env.txt
 
 .env
-#.env.txt.local
-#.env.txt.development.local
-.env.test.local
-#.env.txt.production.local
+.env.local
+.env.development.local
+.env.production.local
